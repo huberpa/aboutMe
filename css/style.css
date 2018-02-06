@@ -32,6 +32,10 @@ body{}
     margin-top: 8%;
 }
 
+._topmargin_TimesFour{
+    margin-top: 12%;
+}
+
 ._topmarginSeparator{
     margin-top: 3%;
 }
