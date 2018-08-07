@@ -1,0 +1,13 @@
+{
+"companyName": "PattieProcudction",
+"productName": "HotelMadness",
+"dataUrl": "hotelMadness_web.data.unityweb",
+"asmCodeUrl": "hotelMadness_web.asm.code.unityweb",
+"asmMemoryUrl": "hotelMadness_web.asm.memory.unityweb",
+"asmFrameworkUrl": "hotelMadness_web.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
