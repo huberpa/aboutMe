@@ -5,7 +5,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>Patrick Huber</title>
-	<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -14,11 +13,11 @@
 
 <body>
 	<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="pageController.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.modal').modal();
 		    $('.scrollspy').scrollSpy({
 		      scrollOffset: 20
 		    });
@@ -34,13 +33,12 @@
 			}
 		});
 	</script>
-		
+
 	<!-- Menu -->
 	<div class="navbar-fixed">
 		<nav class="z-depth-0 noColor">
 		  <div class="nav-wrapper">
 		  	<ul id="menu_items" class="dropdown-content blue-grey-text text-darken-2">
-				<li><a href="#Me">Me</a></li>
 				<li><a href="#Education">Education</a></li>
 				<li><a href="#Experience">Experience</a></li>
 				<li><a href="#Skills">Skills</a></li>
@@ -55,7 +53,7 @@
 		      <li><a style="margin-top: 5px; margin-right:20px" class="right btn-floating btn-large waves-effect waves-light blue-grey darken-2"><i class="material-icons">translate</i></a></li>
 		    </ul>-->
 		    <ul class="left">
-		      <li><a style="margin-top: 5px; margin-left: 5px" class="dropdown-button waves-effect waves-light btn-large blue-grey darken-2" href="#!" data-activates="menu_items">Where to Go?</a></li>
+		      <li><a style="margin-top: 5px; margin-left: 20px" class="dropdown-button waves-effect waves-light btn-large blue-grey darken-2" href="#!" data-activates="menu_items">Where to Go?</a></li>
 		    </ul>
 		  </div>
 		</nav>
@@ -63,9 +61,9 @@
 
 	<!-- LandingPage -->
 	<div class="row">
-    	<div class="col l4 m8 s12 center-align offset-l4 offset-m2">
-		<svg id="Me" class="scrollspy"
-		   width="100%"
+    	<div class="col l6 m10 s12 center-align _topmargin offset-l3 offset-m1">
+		<svg
+		   width="80%"
 		   viewBox="0 0 100 80">
 		<defs
 		     id="defs947">
@@ -73,7 +71,7 @@
 		       inkscape:collect="always"
 		       id="linearGradient864">
 		      <stop
-		         style="stop-color:#222222;stop-opacity:0.4;"
+		         style="stop-color:#222222;stop-opacity:1;"
 		         offset="0"
 		         id="stop860" />
 		      <stop
@@ -297,16 +295,17 @@
 		     id="path871"
 		     inkscape:connector-curvature="0"
 		     sodipodi:nodetypes="cccccc" />
-		 <rect
+		  <rect
+		     ry="2.9249635"
 		     y="31.768635"
 		     x="-74.10421"
 		     height="34.047825"
 		     width="9.8747215"
 		     id="rect873"
-		     style="opacity:0.30578512;fill:url(#linearGradient866);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.64980912;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+		     style="opacity:0.504;fill:url(#linearGradient866);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.64980912;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		     transform="matrix(-0.01982909,-0.99980338,1,-8.2340742e-5,0,0)" />
-		<rect
-		     style="opacity:1;fill:#cccccc;fill-opacity:0.04803922;fill-rule:nonzero;stroke:#000000;stroke-width:0.97851014;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+		  <rect
+		     style="opacity:1;fill:#cccccc;fill-opacity:0.09803922;fill-rule:nonzero;stroke:#000000;stroke-width:0.97851014;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		     id="rect5444"
 		     width="34.598625"
 		     height="22.035069"
@@ -323,64 +322,19 @@
 		<h5 class="light italic">Software Developer &amp; AI Enthusiast</h5>
     </div>
 
-	<div class="center-align" style="margin-top: 50px">
-		<a href="#Education" class="btn-floating btn-large waves-effect waves-light blue-grey darken-2"><i class="material-icons">arrow_downward</i></a>
+	<div class="center-align _topmargin_Triple">
+		<i class="material-icons small">blur_on</i>
 	</div>
 
-    <div id="Education" class="center-align container scrollspy" style="margin-top: 14%">
+    <div id="Education" class="center-align _topmargin_Double container scrollspy">
 		<h2 class="thin">Education</h2>
 
 		<div class="svgTest row blue-grey-text text-darken-2">
 		    <div class="col s12 m10 l8 offset-l2 offset-m1">
 		      <div class="card z-depth-3">
 		        <div class="card-image">
-		          <img src="img/mainmallUBC.jpg">
-		          <span class="card-title">University of British Columbia</span>
-		        </div>
-		        <div class="card-content">
-		        	<div class="row">
-		        		<div class="col s12 m12 l12">
-		        			<h4 class="thin">Ph. D. Computer Science</h4>
-		        		</div>
-		        		<div class="col s12 m12 l12">
-		        			<p class="light">Sep 2018 - present</p>
-		        		</div>
-						<div class="col s12 m12 l12 _topmarginSeparator">
-			        		<i class="material-icons tiny">drag_handle</i>
-		        		</div>     		
-		        		<div class="col s12 m12 l12">
-		   			        <h5 class="thin">Research Topics</h5>
-		        		</div>
-		        		<div class="col s12 m12 l12">
-		        			<p class="light">Artificial Intelligence, Machine Learning, Natural Language Processing, Natural Language Generation, Computational Linguistics</p>
-		        		</div>
-						<div class="col s12 m12 l12 _topmarginSeparator">
-			        		<i class="material-icons tiny">drag_handle</i>
-		        		</div>
-		        		<div class="col s12 m12 l12">
-		        			<h5 class="thin">Supervisor</h5>
-		        		</div>
-		        		<div class="col s12 m12 l12">
-		        			<p class="light">Prof. Dr. Giuseppe Carenini</p>
-		        		</div>
-		        		<div class="col s12 m12 l12 _topmarginSeparator">
-			        		<i class="material-icons tiny">drag_handle</i>
-		        		</div>
-		        		<div class="col s6 m4 l2 offset-l5 offset-m4 offset-s3 _topmarginSeparator">
-					        	<img width="100%" src="img/ubc_logo.png">
-		        		</div>
-   			      </div>
-		        </div>
-		      </div>
-		    </div>
-		</div>
-
-		<div class="svgTest row blue-grey-text text-darken-2">
-		    <div class="col s12 m10 l8 offset-l2 offset-m1">
-		      <div class="card z-depth-3">
-		        <div class="card-image">
 		          <img src="img/kit_banner.jpg">
-		          <span class="card-title">Karlsruhe Institute of Technology</span>
+		          <span class="card-title">Karlsruhe Institute of Technology, Germany</span>
 		        </div>
 		        <div class="card-content">
 		        	<div class="row">
@@ -388,11 +342,11 @@
 		        			<h4 class="thin">M. Sc. Computer Science</h4>
 		        		</div>
 		        		<div class="col s12 m12 l12">
-		        			<p class="light">Oct 2014 - Mar 2018</p>
+		        			<p class="light">Oct 2014 - Dec 2017</p>
 		        		</div>
 						<div class="col s12 m12 l12 _topmarginSeparator">
 			        		<i class="material-icons tiny">drag_handle</i>
-		        		</div>     		
+		        		</div>
 		        		<div class="col s12 m12 l12">
 		   			        <h5 class="thin">Main Courses</h5>
 		        		</div>
@@ -411,12 +365,6 @@
 		        		<div class="col s12 m12 l12 _topmarginSeparator">
 			        		<i class="material-icons tiny">drag_handle</i>
 		        		</div>
-						<div class="col s12 m12 l12">
-		        			<h5 class="thin">Graduation with distinction</h5>
-		        		</div>
-		        		<div class="col s12 m12 l12 _topmarginSeparator">
-			        		<i class="material-icons tiny">drag_handle</i>
-		        		</div>
 		        		<div class="col s6 m4 l2 offset-l5 offset-m4 offset-s3 _topmarginSeparator">
 					        	<img width="100%" src="img/Logo_KIT.png">
 		        		</div>
@@ -431,7 +379,7 @@
 		      <div class="card z-depth-3">
 		        <div class="card-image">
 		          <img src="img/dhbw_banner.jpg">
-		          <span class="card-title">Cooperative State University Karlsruhe</span>
+		          <span class="card-title">Cooperative State University Karlsruhe, Germany</span>
 		        </div>
 		        <div class="card-content">
 		        	<div class="row">
@@ -443,7 +391,7 @@
 		        		</div>
 						<div class="col s12 m12 l12 _topmarginSeparator">
 			        		<i class="material-icons tiny">drag_handle</i>
-		        		</div>     		
+		        		</div>
 		        		<div class="col s12 m12 l12">
 		   			        <h5 class="thin">Main Courses</h5>
 		        		</div>
@@ -458,12 +406,6 @@
 		        		</div>
 		        		<div class="col s12 m12 l12">
 		        			<p class="light">Multidimensional Indoor Object Tracking with active RFID</p>
-		        		</div>
-		        		<div class="col s12 m12 l12 _topmarginSeparator">
-			        		<i class="material-icons tiny">drag_handle</i>
-		        		</div>
-						<div class="col s12 m12 l12">
-		        			<h5 class="thin">Graduation with distinction</h5>
 		        		</div>
 		        		<div class="col s12 m12 l12 _topmarginSeparator">
 			        		<i class="material-icons tiny">drag_handle</i>
@@ -490,7 +432,7 @@
 		      <div class="card z-depth-3">
 		        <div class="card-image">
 		          <img src="img/sap_walldorf_banner.jpg">
-		          <span class="card-title">SAP Headquarters Walldorf</span>
+		          <span class="card-title">SAP Headquarters Walldorf, Germany</span>
 		        </div>
 		        <div class="card-content">
 		        	<div class="row">
@@ -502,13 +444,13 @@
 		        		</div>
 						<div class="col s12 m12 l12 _topmarginSeparator">
 			        		<i class="material-icons tiny">drag_handle</i>
-		        		</div>     		
+		        		</div>
 		        		<div class="col s12 m12 l12">
 		   			        <h5 class="thin">Responsibilities</h5>
 		        		</div>
 		        		<div class="col s12 m12 l12">
 		        			<p class="light left">Developed four web applications on SAP Cloud Platform frequently used by over 1000 customers worldwide</p>
-		        			
+
 		        			<i class="material-icons tiny">more_horiz</i>
 
 		        			<p class="light">Managed repository transition into a new landscape with strict time constraints (hot swap) to enhance system stability</p>
@@ -534,7 +476,7 @@
 		      <div class="card z-depth-3">
 		        <div class="card-image">
 		          <img src="img/sap_vancouver_banner.jpg">
-		          <span class="card-title">SAP Labs Vancouver</span>
+		          <span class="card-title">SAP Labs Vancouver, Canada</span>
 		        </div>
 		        <div class="card-content">
 		        	<div class="row">
@@ -546,13 +488,13 @@
 		        		</div>
 						<div class="col s12 m12 l12 _topmarginSeparator">
 			        		<i class="material-icons tiny">drag_handle</i>
-		        		</div>     		
+		        		</div>
 		        		<div class="col s12 m12 l12">
 		   			        <h5 class="thin">Responsibilities</h5>
 		        		</div>
 		        		<div class="col s12 m12 l12">
 		        			<p class="light">Full-stack web development with SAPUI5 and SAP Cloud Platform</p>
-		        			
+
 		        			<i class="material-icons tiny">more_horiz</i>
 
 		        			<p class="light">Led a team of four international interns and implemented cross-topic communication to ensure coding conventions and quality</p>
@@ -594,13 +536,13 @@
 		        		</div>
 						<div class="col s12 m12 l12 _topmarginSeparator">
 			        		<i class="material-icons tiny">drag_handle</i>
-		        		</div>     		
+		        		</div>
 		        		<div class="col s12 m12 l12">
 		   			        <h5 class="thin">Responsibilities</h5>
 		        		</div>
 		        		<div class="col s12 m12 l12">
 		        			<p class="light left">Designed and implemented company internal native mobile applications on BlackBerry and Android</p>
-		        			
+
 		        			<i class="material-icons tiny">more_horiz</i>
 
 		        			<p class="light">Developed a proof-of-concept real-time emergency control center using the push enabled Java web framework Vaadin</p>
@@ -677,7 +619,7 @@
 	        <div class="col s12 m6">
 	          <div class="card z-depth-3">
 	            <div class="card-content">
-					  <img class="responsive-img" width="25%" src="img/logo_android.png" alt="Android">
+					  <img class="responsive-img" width="25%" src="img/Logo_android.png" alt="Android">
 	              <p>
 	              	<input type="radio" id="skl1_1" disabled="disabled" checked/><label for="skl1_1"></label>
 	              	<input type="radio" id="skl1_2" disabled="disabled" checked/><label for="skl1_2"></label>
@@ -850,172 +792,6 @@
 	          </div>
 	        </div>
 	      </div>
-	      <div class="row blue-grey-text text-darken-2">
-	      	<div class="col s12 m6">
-	          <div class="card z-depth-3">
-	            <div class="card-content">
-					  <img class="responsive-img" width="30%" src="img/Logo_unity.png" alt="Unity">
-	              <p>
-	              	<input type="radio" id="skl1_1" disabled="disabled" checked/><label for="skl1_1"></label>
-	              	<input type="radio" id="skl1_2" disabled="disabled" checked/><label for="skl1_2"></label>
-	              	<input type="radio" id="skl1_3" disabled="disabled" checked/><label for="skl1_3"></label>
-	              	<input type="radio" id="skl1_4" disabled="disabled"/><label for="skl1_4"></label>
-	              	<input type="radio" id="skl1_5" disabled="disabled"/><label for="skl1_5"></label>
-	              </p>
-	              <p class="light" >Less than a year of experience with Unity, developing 2D and 3D games.</p>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col s12 m6">
-	          <div class="card z-depth-3">
-	            <div class="card-content">
-					  <img class="responsive-img" width="30%" src="img/Logo_blender.png" alt="Blender">
-	              <p>
-	              	<input type="radio" id="skl1_1" disabled="disabled" checked/><label for="skl1_1"></label>
-	              	<input type="radio" id="skl1_2" disabled="disabled" checked/><label for="skl1_2"></label>
-	              	<input type="radio" id="skl1_3" disabled="disabled" checked/><label for="skl1_3"></label>
-	              	<input type="radio" id="skl1_4" disabled="disabled" checked/><label for="skl1_4"></label>
-	              	<input type="radio" id="skl1_5" disabled="disabled"/><label for="skl1_5"></label>
-	              </p>
-	              <p class="light" >2+ years of experience with the open source 3D animation tool Blender, sketching, modelling and animating 3D characters and objects</p>
-	                <!-- Modal Trigger -->
-				  <a class="modal-trigger" href="#showBlender">Show me what you did there!</a>
-
-				  <!-- Modal Structure -->
-				  <div id="showBlender" class="modal">
-				    <div class="modal-content">
-				      <h4 class="thin">Blender Artworks</h4>
-				      	<div class="card">
-				            <div class="card-image">
-								<img class="responsive-img" src="img/Blender_1.png" alt="BlenderArtworks">
-				            </div>
-				            <div class="card-content">
-				              <p>Chameleon model inspired by the movie Tangled</p>
-				            </div>
-				        </div>
-				      	<p><i class="material-icons medium">more_horiz</i></p>
-
-				      	<div class="card">
-				            <div class="card-image">
-								<img class="responsive-img" style="width:20%; margin-left: 40%" src="img/Blender_2.png" alt="BlenderArtworks">
-				            </div>
-				            <div class="card-content">
-				              <p>Child playing baseball</p>
-				            </div>
-				        </div>
-				      	<p><i class="material-icons medium">more_horiz</i></p>
-
-				      	<div class="card">
-				            <div class="card-image">
-								<img class="responsive-img" width="70%" src="img/Blender_3.jpg" alt="BlenderArtworks">
-				            </div>
-				            <div class="card-content">
-				              <p>Apocalyptic scenery</p>
-				            </div>
-				        </div>
-				      	<p><i class="material-icons medium">more_horiz</i></p>
-
-				      	<div class="card">
-				            <div class="card-image">
-								<img class="responsive-img" style="width:30%; margin-left: 35%" src="img/Blender_4.png" alt="BlenderArtworks">
-				            </div>
-				            <div class="card-content">
-				              <p>Basic model of a semi-realistic rabbit</p>
-				            </div>
-				        </div>
-				      	<p><i class="material-icons medium">more_horiz</i></p>
-
-				      	<div class="card">
-				            <div class="card-image">
-								<img class="responsive-img" src="img/Blender_5.jpg" alt="BlenderArtworks">
-				            </div>
-				            <div class="card-content">
-				              <p>Highrise model created by following <a href="https://www.youtube.com/watch?v=emT-CL957HE">this</a> tutorial</p>
-				            </div>
-				        </div>
-				      	<p><i class="material-icons medium">more_horiz</i></p>
-
-				      	<div class="card">
-				            <div class="card-image">
-								<img class="responsive-img" src="img/Blender_6.png" alt="BlenderArtworks">
-				            </div>
-				            <div class="card-content">
-				              <p>Model inspired by the Teotihuacan pyramides</p>
-				            </div>
-				        </div>
-				      	<p><i class="material-icons medium">more_horiz</i></p>
-
-				      	<div class="card">
-				            <div class="card-image">
-								<img class="responsive-img" src="img/Blender_8.png" alt="BlenderArtworks">
-				            </div>
-				            <div class="card-content">
-				              <p>Mercedes 300 SL, completely modeled and texutred in Blender3D</p>
-				            </div>
-				        </div>
-				      	<p><i class="material-icons medium">more_horiz</i></p>
-
-				      	<div class="card">
-				            <div class="card-image">
-								<img class="responsive-img" src="img/Blender_9.png" alt="BlenderArtworks">
-				            </div>
-				            <div class="card-content">
-				              <p>Spaceshuttle accelerating</p>
-				            </div>
-				        </div>
-				      	<p><i class="material-icons medium">more_horiz</i></p>
-
-				      	<div class="card">
-				            <div class="card-image">
-								<img class="responsive-img" src="img/Blender_10.jpg" alt="BlenderArtworks">
-				            </div>
-				            <div class="card-content">
-				              <p>Spaceshuttle lift-off from earth</p>
-				            </div>
-				        </div>
-				    </div>
-				  </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	      <div class="row blue-grey-text text-darken-2">
-	      	<div class="col s12 m12">
-	          <div class="card z-depth-3">
-	            <div class="card-content">
-	              	<h4 class="thin" >Basic knowledge of</h4>
-					<div class="row">
-				      	<div class="col s3 m2 offset-m2">
-				            <img class="responsive-img" width="80%" src="img/Logo_c.png" alt="C">
-				        </div>
-				        <div class="col s3 m2">
-				            <img class="responsive-img" width="80%" src="img/Logo_cpp.png" alt="C++">
-				        </div>
-				        <div class="col s3 m2">
-				            <img style="padding-top:25%" class="responsive-img" width="90%" src="img/Logo_cucumber.png" alt="Cucumber">
-				        </div>
-				        <div class="col s3 m2">
-				            <img class="responsive-img" width="80%" src="img/Logo_gherkin.png" alt="Gherkin">
-				        </div>
-				    </div>
-				    <div class="row">
-				      	<div class="col s3 m2 offset-m2">
-				            <img class="responsive-img" width="55%" src="img/Logo_jenkin.png" alt="Jenkins">
-				        </div>
-				        <div class="col s3 m2">
-				            <img style="padding-top:25%" class="responsive-img" width="90%" src="img/Logo_junit.png" alt="JUnit">
-				        </div>
-				        <div class="col s3 m2">
-				            <img class="responsive-img" width="90%" src="img/Logo_powershell.png" alt="Powershell">
-				        </div>
-				        <div class="col s3 m2">
-				            <img style="padding-top:2%" class="responsive-img" width="90%" src="img/Logo_visualBasic.png" alt="Visual Basic">
-				        </div>
-				    </div>	              	
-	            </div>
-	          </div>
-	        </div>
-	      </div>
     </div>
 
 	<div class="center-align _topmargin_Triple">
@@ -1057,9 +833,9 @@
 	        <div class="col s12 m6">
 	          <div class="card z-depth-3">
 	             <div class="card-content">
-					<i style="margin-top:4%" class="material-icons medium">free_breakfast</i>						
+					<i style="margin-top:4%" class="material-icons medium">free_breakfast</i>
 					<h4 class="thin" style="margin-bottom:4%">Personal Projects</h4>
-			        <p><i class="material-icons small" style="margin-bottom:4%">drag_handle</i></p>		
+			        <p><i class="material-icons small" style="margin-bottom:4%">drag_handle</i></p>
 			        <h5 class="thin">Hotel Madness - Cross-platform game made with Unity</h5>
 	              	<p class="light">
 	              		While experimenting with Unity I created this one-touch controlled action game. The objective is to bring the hotel guests to their desired floors before they lose their cool and commplain about you!
@@ -1067,7 +843,7 @@
 	              	<p>
 	              		<a href="./game.html">Try the game!</a>
 	              	</p><br/>
-        			<p><i class="material-icons tiny">more_horiz</i></p>				
+        			<p><i class="material-icons tiny">more_horiz</i></p>
 			        <h5 class="thin">Mafia - Web Application</h5>
 	              	<p class="light">
 	              		As a personal project, I implemented a web-based version of the social card game "Mafia", also known as "Werewolfe". The implemented prototype takes advantage of the benefits provided by the technological framework and combines these with the classical elements of the card game
@@ -1080,8 +856,8 @@
         			<p><i class="material-icons tiny">more_horiz</i></p>
         			<h5 class="thin">Connect Four - Evolutionary Neural Network</h5>
 	              	<p class="light">
-	              		To solidify my understanding of artificial neural networks, I created an object-oriented feed-forward neural network from scratch and trained the model on the task of solving the game "connect four". Through the nature of the task, a reinforcement-learning approach utilizing an evolutionary algorithm has been used to train the model. The final results indicated clear evidence that the network reached nearly-human performance on the task. 
-	              	</p>	            
+	              		To solidify my understanding of artificial neural networks, I created an object-oriented feed-forward neural network from scratch and trained the model on the task of solving the game "connect four". Through the nature of the task, a reinforcement-learning approach utilizing an evolutionary algorithm has been used to train the model. The final results indicated clear evidence that the network reached nearly-human performance on the task.
+	              	</p>
 	            </div>
 	          </div>
 	        </div>
@@ -1093,36 +869,51 @@
 	</div>
 
 	<div id="Awards" class="center-align _topmargin_Double container scrollspy">
-		<h2 class="thin">Awards</h2>
+		<h2 class="thin">Achievements</h2>
 		<div class="row blue-grey-text text-darken-2">
 	        <div class="col s12 m12">
 	          <div class="card z-depth-3">
 	            <div class="card-content">
 		              <div class="row">
-		              	 <div class="col s12 m6 l4">
+										<div class="col s12 m6 l6">
+										 <span style="margin-bottom:4%; margin-top: 6%" class="card-title"><i class="material-icons medium">stars</i></span>
+										 <h4 class="thin">Conference Reviewer</h4>
+										 <h5 class="light">EMNLP 2019, Hong Kong</h5>
+										 <p class="light">In the area of "Summarization and Generation"</p>
+										 <p class="thin" style="margin-top:3%">Summer 2019</p>
+										 <p><i class="material-icons small">drag_handle</i></p>
+										</div>
+										<div class="col s12 m6 l6">
+										 <span style="margin-bottom:4%; margin-top: 6%" class="card-title"><i class="material-icons medium">stars</i></span>
+										 <h4 class="thin">Students Award</h4>
+										 <h5 class="light">KIT</h5>
+										 <p class="light">Top 10% of Graduating Class 2018</p>
+										 <p class="thin" style="margin-top:3%">received in March 2018</p>
+										 <p><i class="material-icons small">drag_handle</i></p>
+										</div>
+		              	 <div class="col s12 m6 l6">
 				            	<span style="margin-bottom:4%; margin-top: 6%" class="card-title"><i class="material-icons medium">stars</i></span>
 		              	 	<h4 class="thin">FastTrack Award</h4>
 		              	 	<h5 class="light">SAP SE</h5>
 		              	 	<p class="light">Talent program for the top 10% interns at SAP</p>
 		              	 	<p class="thin" style="margin-top:3%">received in May 2017</p>
-		              	 	<p><i class="material-icons small">drag_handle</i></p>						
-
+		              	 	<p><i class="material-icons small">drag_handle</i></p>
 		              	 </div>
-		              	 <div class="col s12 m6 l4">
+		              	 <div class="col s12 m6 l6">
 		              	 	<span style="margin-bottom:4%; margin-top: 6%" class="card-title"><i class="material-icons medium">stars</i></span>
 		              	 	<h4 class="thin">Net2 Scholarship</h4>
 		              	 	<h5 class="light">Netze BW GmbH</h5>
 		              	 	<p class="light">12 month company scholarship awarded with €250 per month and company events</p>
 		              	 	<p class="thin" style="margin-top:3%">received in April 2015</p>
-		              	 	<p><i class="material-icons small">drag_handle</i></p>		
+		              	 	<p><i class="material-icons small">drag_handle</i></p>
 		              	 </div>
-		              	 <div class="col s12 m6 l4 offset-m3">
+		              	 <div class="col s12 m6 l6">
 		              	 	<span style="margin-bottom:4%; margin-top: 6%" class="card-title"><i class="material-icons medium">stars</i></span>
 		              	 	<h4 class="thin">Students Award</h4>
 		              	 	<h5 class="light">DHBW</h5>
 		              	 	<p class="light">Best graduate student of the class of 2014</p>
 		              	 	<p class="thin" style="margin-top:3%">received in September 2014</p>
-		              	 	<p><i class="material-icons small">drag_handle</i></p>		
+		              	 	<p><i class="material-icons small">drag_handle</i></p>
 		              	 </div>
 		              </div>
 	            </div>
@@ -1137,7 +928,7 @@
 
 	<div id="Publications" class="center-align _topmargin_Double container scrollspy">
 		<h2 class="thin">Publications</h2>
-		
+
 		<div class="row blue-grey-text text-darken-2">
 			<div class="col s12 m8 offset-m2">
 				<div class="card z-depth-3">
@@ -1145,7 +936,7 @@
 				      <img class="activator" src="img/banner_lrec2018.jpg">
 				    </div>
 				    <div class="card-content">
-				       <h3 class="card-title activator thin"><a target="_blank" href="http://www.lrec-conf.org/proceedings/lrec2018/summaries/689.html">Automated Evaluation of Out-of-Context Errors</a><i class="material-icons right">more_vert</i></h3>
+				      <h3 class="card-title activator thin"><a target="_blank" href="http://www.lrec-conf.org/proceedings/lrec2018/summaries/689.html">Automated Evaluation of Out-of-Context Errors</a><i class="material-icons right">more_vert</i></h3>
 				      <p>Patrick Huber, Jan Niehues, Alex Waibel</p>
 				      <p>Institute for Anthropomatics and Robotics, Karlsruhe Institute of Technology (KIT)</p>
 				    </div>
@@ -1181,6 +972,7 @@
 				</div>
 			</div>
 		</div>
+
     </div>
 
     <div class="center-align _topmargin_Triple">
@@ -1254,15 +1046,15 @@
 		              	 <div class="col s12 m6">
 				            	<span style="margin-bottom:4%; margin-top: 6%" class="card-title"><i class="material-icons medium">code</i></span>
 		              	 	<h4 class="thin">Girls Smart 4 Tech</h4>
-		              	 	<p class="light">One day workshop for highschool girls to get interested in techinical jobs. I held a keynote presentation on "International Opportunities in Tech Companies" and was hosting a 60 minutes workshop on the coding language "Alice"</p>
-		              	 	<p><i class="material-icons small">drag_handle</i></p>						
+		              	 	<p class="light">One day workshop for highschool girls to get interested in techinical jobs. I held a keynote presentation on "International Opportunities i nTech Companies" and was co-josting a 60 minutes workshop on the coding language "Alice"</p>
+		              	 	<p><i class="material-icons small">drag_handle</i></p>
 
 		              	 </div>
 		              	 <div class="col s12 m6">
 		              	 	<span style="margin-bottom:4%; margin-top: 6%" class="card-title"><i class="material-icons medium">directions_bike</i></span>
 		              	 	<h4 class="thin">The Bicycle Valet</h4>
 		              	 	<p class="light">I volunteered at the bicycle valet, providing secure bicycle parking in and around Metro Vancouver to support environmentally friendly ways to get to major events in Vancouver</p>
-		              	 	<p><i class="material-icons small">drag_handle</i></p>		
+		              	 	<p><i class="material-icons small">drag_handle</i></p>
 		              	 </div>
 		              </div>
 	            </div>
@@ -1367,4 +1159,3 @@
 </body>
 
 </html>
-
